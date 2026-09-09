@@ -14,8 +14,6 @@ This project answers those questions across four analytical lenses — sales per
 
 ## Dashboard Preview
 
-🔗 **[View the live Looker Studio dashboard](ADD_LOOKER_STUDIO_LINK)** — interactive version with filters.
-
 📄 **[View the case study (PDF)](Fashion_Commerce_Case_Study.pdf)** — all four pages plus insights and recommendations, no login needed.
 
 **Page 1 — Sales Performance** *(How is the business trading right now?)* — rolling 3-week window
@@ -55,7 +53,7 @@ This project answers those questions across four analytical lenses — sales per
 | Customer segmentation (RFM) | Python (pandas) |
 | Synthetic campaign extension | Python |
 | Dashboard & measures | Looker Studio |
-| Report / case study | Google Slides + Markdown |
+| Report / case study | Canva + Markdown |
 
 ---
 
@@ -122,44 +120,6 @@ This project answers those questions across four analytical lenses — sales per
 - **Fix the browse-to-cart leak.** Because the funnel breaks at Sessions → Add to Cart, prioritise product-page improvements (imagery, size guidance, social proof, clearer pricing) over checkout tweaks.
 
 **What good looks like next quarter:** discount dependency **< 25%** · Germany repeat rate rising toward the **41%** portfolio average · sell-through recovering toward **60%** · blended margin back above **45%**.
-
----
-
-## Repository Structure
-
-```
-├── README.md
-├── data/
-│   ├── raw/                # Kaggle source tables
-│   └── processed/          # cleaned, analysis-ready datasets + synthetic campaign data
-├── notebooks/
-│   └── cleaning_prep.ipynb # profiling, cleaning, validation, RFM, KPI engineering
-├── scripts/
-│   └── generate_campaigns.py  # synthetic campaign-marketing extension
-├── dashboard/
-│   └── Fashion_Commerce_Case_Study.pdf
-└── images/                 # dashboard page screenshots
-```
-
----
-
-## How to Run
-
-1. **Download the source data** from the [Kaggle dataset](https://www.kaggle.com/datasets/joycemara/european-fashion-store-multitable-dataset) into `data/raw/`.
-2. **Clean & prepare** — run the Python notebook to profile, clean, validate, and transform the tables, build the RFM segments and KPIs, and export analysis-ready CSVs to `data/processed/`.
-3. **Generate the campaign extension** — run `scripts/generate_campaigns.py` to produce the synthetic daily campaign dataset.
-4. **Open the dashboard** — view the live report via the Looker Studio link above, or open the PDF in `dashboard/`.
-5. **Read the findings** — the full analysis and recommendations are in this README and the case-study PDF.
-
----
-
-## Author
-
-**Nguyen Nhu Xuan Anh (Ann)** — Data / BI Analyst
-
-- LinkedIn: https://www.linkedin.com/in/ann-nguyen-545556316/
-- GitHub: https://github.com/xanhnguyen186
-- Email: xuananh062005@gmail.com
 
 ---
 
